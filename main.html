@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Save Page</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="src/css/uikit/uikit.min.css" />
+
+
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <!-- UIkit js -->
+    <script src="src/js/uikit/uikit.min.js"></script>
+    <script src="src/js/uikit/uikit-icons.min.js"></script>
+</head>
+
+<body>
+    <div class="">
+        <div class="sidebar uk-visible@m">
+            <div class="uk-container uk-container-small uk-margin-large-top">
+                <h1><img src="icon16.png" width="50px" height="50px"></h1>
+                <h3><a href="#top" class="uk-link-reset">Save Page</a></h3>
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-nav-header">Link</li>
+                    <li><a href="#save-pages">Save Pages</a></li>
+                    <li><a href="#backup-pages">Backup Pages</a></li>
+                    <li><a href="#recently-pages">Recently Closed Pages</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="main uk-section uk-section-default">
+            <div class="uk-container uk-container-small">
+                <div>
+                    <h2 class="uk-heading-bullet" id="save-pages">Saved Pages <span uk-icon="refresh" id="tab-refresh"
+                            class="icon-btn"></span>
+                    </h2>
+                    <button id="btn-tab-save" class="btn">Save Pages</span></button>
+                    <button id="btn-tab-create" class="btn btn-tab-create">Open All <span
+                            uk-icon="move"></span></button>
+                    <span uk-icon="trash" id="tab-remove" class="icon-btn uk-margin-medium-left"></span>
+                    <div class="uk-card uk-card-body">
+                        <ul id="list-tab" class="uk-list" uk-accordion>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="uk-margin uk-margin-large-top">
+                    <h2 class="uk-heading-bullet" id="backup-pages">Backup Pages <span uk-icon="refresh"
+                            id="tab-backup-refresh" class="icon-btn"></span></h2>
+                    <p id="backup-date"></p>
+                    <button id="btn-tab-backup-create" class="btn btn-tab-create">Open All <span
+                            uk-icon="move"></span></button>
+                    <div class="uk-card uk-card-body">
+                        <ul id="list-tab-backup" class="uk-list" uk-accordion>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="uk-margin uk-margin-large-top">
+                    <h2 class="uk-heading-bullet" id="recently-pages">Recently Closed Pages <span uk-icon="refresh"
+                            id="tab-recently-refresh" class="icon-btn"></span></h2>
+                    <button id="btn-tab-recently-create" class="btn btn-tab-create">Open All <span
+                            uk-icon="move"></span></button>
+                    <div class="uk-card uk-card-body">
+                        <ul id="list-tab-recently" class="uk-list" uk-accordion>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module" src="src/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Save Page",
+    "version": "1.0.0",
+    "icons": {
+        "16": "icon16.png"
+    },
+    "description": "Save the currently open pages.",
+    "permissions": [
+        "alarms",
+        "storage",
+        "tabs",
+        "windows",
+        "sessions"
+    ],
+    "background": {
+        "service_worker": "src/js/background.js",
+        "type": "module"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "src/js/*"
+            ],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    "action": {
+        "default_icon": {
+            "16": "icon16.png"
+        }
+    }
+}

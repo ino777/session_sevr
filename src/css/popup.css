@@ -1,0 +1,39 @@
+.btn {
+    width: 150px;
+    height: 40px;
+    margin: 5px 5px;
+    border: solid 1px gray;
+    cursor: pointer;
+}
+
+#btn-tab-save {
+    color: white;
+    background-color: #47e9ff;
+}
+#btn-tab-save:hover {
+    background-color: #47eaffb4;
+}
+
+#btn-tab-create {
+    color: white;
+    background-color: #4d90fe;
+}
+
+#btn-tab-create:hover {
+    background-color: #4d91fece;
+}
+
+#msg-save {
+    text-align: right;    
+}
+
+#detail-link{
+    color: rgb(58, 36, 255);
+    margin: 2px 2px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+#detail-link:hover{
+    text-decoration:underline;
+}
